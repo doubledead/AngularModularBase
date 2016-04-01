@@ -1,0 +1,20 @@
+{
+  "name": "BaseApp",
+  "description": "Base AngularJS app with routing.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.9",
+    "angular-route": "~1.4.9"
+  }
+}
