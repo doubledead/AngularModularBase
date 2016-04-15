@@ -7,12 +7,13 @@ This webapp requires these programs:
 - bower
 
 
-Install all required node modules
+#### 1. Install all required node modules
 
-> npm install
-> npm install -g gulp
-> npm install gulp
+  $ npm install
 
-Install all required JS and CSS libraries
+#### 2. Install all required JS and CSS libraries
 
-> bower install
+  $ bower install
+
+#### 3. Run project
+  $ gulp serve
