@@ -43,3 +43,7 @@ gulp.task('serve', [], function () {
   gulp.watch("styles/**/*.css").on('change', reload);
   gulp.watch("sass/**/*.scss", ['sass', reload]);
 });
+
+
+// Default task that will run by type 'gulp'
+gulp.task('default',['sass']);
