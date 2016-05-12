@@ -43,16 +43,3 @@ gulp.task('serve', [], function () {
   gulp.watch("styles/**/*.css").on('change', reload);
   gulp.watch("sass/**/*.scss", ['sass', reload]);
 });
-
-// Build and serve the output from the dist build
-gulp.task('serve:dist', ['default'], function () {
-  browserSync({
-    notify: false,
-    logPrefix: 'WSK',
-    // Run as an https by uncommenting 'https: true'
-    // Note: this uses an unsigned certificate which on first access
-    //       will present a certificate warning in the browser.
-    // https: true,
-    server: 'dist'
-  });
-});
