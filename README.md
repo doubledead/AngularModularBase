@@ -1,6 +1,12 @@
 # AngularModularBase
 AngularJS base app using modulars
 
+Features:
+
+- AngularJS
+- SASS
+- Bootstrap-sass
+
 This webapp requires these programs: 
 
 - NodeJs
