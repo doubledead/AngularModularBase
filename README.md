@@ -4,8 +4,9 @@ AngularJS base app using modulars
 Features:
 
 - AngularJS
-- SASS
+- SASS (Only make your styles edits in /sass/)
 - Bootstrap-sass
+- Gulp-angular-templatecache
 
 This webapp requires these programs: 
 
