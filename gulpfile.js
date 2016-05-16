@@ -2,7 +2,6 @@
 
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
-var sass = require('gulp-sass');
 var templateCache = require('gulp-angular-templatecache');
 
 var reload = browserSync.reload;
@@ -18,12 +17,6 @@ var AUTOPREFIXER_BROWSERS = [
   'android >= 4.4',
   'bb >= 10'
 ];
-
-gulp.task('sass', function() {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
-});
 
 gulp.task('templates', function () {
   return gulp.src('templates/**/*.html')
@@ -47,9 +40,8 @@ gulp.task('serve', [], function () {
   gulp.watch("templates/**/*.html", ['templates', reload]);
   gulp.watch("scripts/**/*.js").on('change', reload);
   gulp.watch("styles/**/*.css").on('change', reload);
-  gulp.watch("sass/**/*.scss", ['sass', reload]);
 });
 
 
 // Default task that will run by type 'gulp'
-gulp.task('default',['sass', 'templates']);
+gulp.task('default',['templates']);
