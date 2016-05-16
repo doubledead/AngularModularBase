@@ -1,5 +1,5 @@
 # AngularModularBase
-AngularJS base app using modulars
+This is an AngularJS base app that uses modules for easy injection control.
 
 Features:
 
