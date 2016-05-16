@@ -20,12 +20,12 @@ angular.module('baseApp.index', [
   $routeProvider
     .when('/', { 
       title: 'BaseApp - Index', 
-      templateUrl: 'partials/main.html', 
+      templateUrl: 'main.html', 
       controller: 'IndexCtrl' 
     })
     .when('/about', { 
       title: 'BaseApp - About', 
-      templateUrl: 'partials/about.html', 
+      templateUrl: 'about.html', 
       controller: 'IndexCtrl' 
     })
     .otherwise({ redirectTo: '/' });

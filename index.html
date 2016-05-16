@@ -2,7 +2,7 @@
 
 <html lang="en" class="no-js" ng-app="baseApp">
   <head>
-    <base href="/">
+    <!--<base href="/">-->
     <meta charset="utf-8" />
     <title>Base App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,9 +12,10 @@
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />-->
     <!-- Page styles -->
     <link rel="stylesheet" href="css/styles.css">
+
   </head>
   <body>
-    <main>
+    <main ng-cloak>
       <div class="container">
         <h1>Base App</h1>
         <ul class="nav nav-tabs" role="tablist">
@@ -22,7 +23,9 @@
           <li><a href="#/about">About</a></li>
         </ul>
       </div>
+      <!-- AngularJS Routing -->
       <div class="container" ng-view=""></div>
+      <!-- End AngularJS Routing -->
       <div class="container" ng-controller="formCtrl">
         <h2>Form</h2>
         <form name="baseForm" role="form">
@@ -33,9 +36,12 @@
     </main>
       
 
+    <!-- AngularJS Library files -->
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     
+    <!-- AngularJS Project files -->
+    <script defer src="scripts/templates.js"></script>
     <script defer src="scripts/main.js"></script>
     <script defer src="scripts/index/index.js"></script>
     <script defer src="scripts/index/controllers.js"></script>

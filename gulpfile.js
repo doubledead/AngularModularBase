@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
+var templateCache = require('gulp-angular-templatecache');
 
 var reload = browserSync.reload;
 
@@ -24,6 +25,11 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./css'));
 });
 
+gulp.task('templates', function () {
+  return gulp.src('templates/**/*.html')
+    .pipe(templateCache({standalone: true}))
+    .pipe(gulp.dest('scripts'));
+});
 
 // Watch Files For Changes & Reload
 gulp.task('serve', [], function () {
@@ -38,7 +44,7 @@ gulp.task('serve', [], function () {
     server: ["./"]
   });
   gulp.watch("index.html").on('change', reload);
-  gulp.watch("partials/*.html").on('change', reload);
+  gulp.watch("templates/**/*.html", ['templates', reload]);
   gulp.watch("scripts/**/*.js").on('change', reload);
   gulp.watch("styles/**/*.css").on('change', reload);
   gulp.watch("sass/**/*.scss", ['sass', reload]);
@@ -46,4 +52,4 @@ gulp.task('serve', [], function () {
 
 
 // Default task that will run by type 'gulp'
-gulp.task('default',['sass']);
+gulp.task('default',['sass', 'templates']);
