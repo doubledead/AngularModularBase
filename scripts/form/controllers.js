@@ -1,9 +1,8 @@
-angular.module('form.controllers', [])
-.controller('formCtrl', ['$scope', function ($scope) {
+angular.module('form.controllers', [
 
-	$scope.submitForm = function () {
-		
-	};
-
-
+]).
+controller('FormCtrl', ['$scope', function ($scope) {
+    $scope.submitForm = function () {
+        console.log("This does nothing right now.");
+    };
 }]);

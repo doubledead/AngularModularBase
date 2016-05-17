@@ -1,8 +1,8 @@
 'use strict';
 
-// AngularJS main app inialization
+// AngularJS main app initialization
 angular.module('baseApp', [
-	'templates',
-	'baseApp.index',
-	'baseApp.form'
+    'templates',
+    'baseApp.index',
+    'baseApp.form'
 ]);
