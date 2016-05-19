@@ -3,9 +3,9 @@ This is an AngularJS base app that uses modules for easy injection control.
 
 Features:
 
-- AngularJS
-- Bootstrap
-- Gulp-angular-templatecache
+- AngularJS 1.5.x
+- Bootstrap 3
+- Angular template caching
 
 This webapp requires these programs: 
 
