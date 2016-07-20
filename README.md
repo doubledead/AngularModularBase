@@ -7,19 +7,19 @@ Features:
 - Bootstrap 3
 - Angular template caching
 
-This webapp requires these programs: 
+This web app requires these programs: 
 
 - NodeJs
-- bower
+- Bower
 
 
-#### 1. Install all required node modules
+#### 1. Install node modules
 
-  $ npm install
+	$ npm install
 
-#### 2. Install all required JS and CSS libraries
+#### 2. Install Bower dependencies
 
-  $ bower install
+	$ bower install
 
 #### 3. Run project
-  $ gulp serve
+	$ gulp serve
